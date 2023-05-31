@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "iossecuritysuite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/securing/IOSSecuritySuite.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1708ab502d8985ce1a1957128473fe866d9e965e"
+      }
+    }
+  ],
+  "version" : 2
+}
