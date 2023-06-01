@@ -33,9 +33,11 @@ After installing App can generate errors. For fix:
 
 With your Iphone, from **Releases**, follow **download-shy** link, insert password and download app.
 
-#### Issues for download from Third-App Store
+#### Why do I get “App cannot be installed because its integrity could not be verified” or “Unable to install”?
 
-You may have application integrity issues.
+This error shows up when you try to install more than 3 apps with a free Apple Developer account. Paid Apple Developer Accounts ($99/year) can have as many apps as they want and they last for one year, but the free developer accounts are now all limited to 3 apps per device for 7 days.
+
+If you are getting “App cannot be installed because its integrity could not be verified” it’s very likely because you already have 3 apps installed. Do keep in mind that AltStore counts towards this limit.
 
 ## Common Issues
 
