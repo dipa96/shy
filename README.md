@@ -59,7 +59,7 @@ For installing IPA files follow **Method 1 - Sideloading(Clean)**
 
 Developer Mode or other App installed on the system could be mistaken for a jaibreak. For the purpose of our goal this is not a problem because we will always try to bypass all checks. In any case it is an issue to investigate because it is a false positive.
 
-*In my case, undecimus:// URL scheme detected and Jailbreak flag set to TRUE.*
+*In my case, undecimus:// URL scheme detected and jailbreak flag set to TRUE.*
 
 If you are curious, I added this code snippet to help you identify your false positive for Jailbrek. Once you run the checks you can look in the Xcode console at your specific error.
 
