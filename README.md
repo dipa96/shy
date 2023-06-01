@@ -12,8 +12,24 @@ Check Device Status consists of a clickable button that shows the current securi
 
 ![check](assets/check.png)
 
-## Library
+## Demo
+
+Add GIF.
+
+## Minimum requirements
+
+At the moment shy supported only iOS 16.
+
+## Installation
+
+### Method 1
+
+From **Releases** download shy ipa file. Sideloading it with tool like [Sideloadly](https://sideloadly.io/), [CydiaImpactor](http://www.cydiaimpactor.com/) and more.
+
+### Method 2
+
+With your Iphone, from **Releases** follow **download-shy** link, insert password and download app.
+
+## Library Used for shy Project
 
 [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)
-
-
