@@ -20,11 +20,11 @@ At the moment shy supported only iOS 16.
 
 ### Method 1
 
-From **Releases** download shy ipa file. Sideloading it with tool like [Sideloadly](https://sideloadly.io/), [CydiaImpactor](http://www.cydiaimpactor.com/) and more.
+From **Releases**, download shy ipa file. Sideloading it with tool like [Sideloadly](https://sideloadly.io/), [CydiaImpactor](http://www.cydiaimpactor.com/) and more.
 
 ### Method 2
 
-With your Iphone, from **Releases** follow **download-shy** link, insert password and download app.
+With your Iphone, from **Releases**, follow **download-shy** link, insert password and download app.
 
 ## Library Used for shy Project
 
