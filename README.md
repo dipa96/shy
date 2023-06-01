@@ -43,6 +43,20 @@ If you are getting “App cannot be installed because its integrity could not be
 
 Developer Mode could be mistaken for a jaibreak. For the purpose of our goal this is not a problem because we will always try to bypass all checks. In any case it is an issue to investigate because it is a false positive.
 
+*In my case, undecimus:// URL scheme detected and Jailbreak flag set to TRUE.*
+
+If you are curious, you can look up your error by adding this check in the code:
+
+```swift
+        let jailbreakStatus = IOSSecuritySuite.amIJailbrokenWithFailMessage()
+        if jailbreakStatus.jailbroken {
+            print("Jaibroken because: \(jailbreakStatus.failMessage)")
+        } else {
+            print("Nothing to say about Jailbreak")
+        }
+```
+
+
 ## Library Used for shy Project
 
 [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)

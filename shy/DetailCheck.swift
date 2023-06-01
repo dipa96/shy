@@ -44,6 +44,14 @@ struct DetailCheck: View {
             CurrentStatus += "Jailbreak: FALSE\n"
         }
         
+        let jailbreakStatus = IOSSecuritySuite.amIJailbrokenWithFailMessage()
+        if jailbreakStatus.jailbroken {
+            print("This device is jailbroken")
+            print("Because: \(jailbreakStatus.failMessage)")
+        } else {
+            print("This device is not jailbroken")
+        }
+        
         if IOSSecuritySuite.amIRunInEmulator() {
             CurrentStatus += "Emulator: TRUE\n"
         } else {
