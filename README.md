@@ -4,6 +4,14 @@ shy is a demo iOS application protected using [IOSSecuritySuite](https://github.
 
 I initially wanted to create [Scrumdinger](https://developer.apple.com/tutorials/app-dev-training/getting-started-with-scrumdinger) from Apple's official documentation. Dropped it in half and started implementing security protection measures. However I highly recommend taking the course(In the end I did it).
 
+# Table of Contents
+1. [Core](#core)
+2. [Demo](#demo)
+3. [Minimum requirements](#minimum-requirements)
+4. [Installation](#installation)
+5. [Common Issues and False Positive](#common-issues-and-false-positive)
+6. [Library used for shy Project](#library-used-for-shy-project)
+
 ## Core
 
 + **Homepage** consists of a clickable card which showing the number of defense to be bypassed.
