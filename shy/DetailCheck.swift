@@ -37,6 +37,7 @@ struct DetailCheck: View {
             - Try to run unc0ver, cydia, apt
             - Check writable folder like /root/ , /private/
         */
+        
         if IOSSecuritySuite.amIJailbroken() {
             CurrentStatus += "Jailbreak: TRUE\n"
         } else {

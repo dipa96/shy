@@ -33,6 +33,14 @@ After installing App can generate errors. For fix:
 
 With your Iphone, from **Releases**, follow **download-shy** link, insert password and download app.
 
+#### Issues for download from Third-App Store
+
+You may have application integrity issues.
+
+## Common Issues
+
+Developer Mode could be mistaken for a jaibreak. For the purpose of our goal this is not a problem because we will always try to bypass all checks. In any case it is an issue to investigate because it is a false positive.
+
 ## Library Used for shy Project
 
 [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)
