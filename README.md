@@ -26,8 +26,8 @@ From **Releases**, download shy ipa file. Sideloading it with tool like [Sideloa
 
 After installing, App can generate errors. For fix:  
 
-+ Enable Developer Mode go to Settings > Privacy & Security on the iOS device. Scroll down to the Developer Mode list item and navigate into it. To toggle Developer mode, use the “Developer Mode” switch.
-+ Trust Developer in Settings > VPN & Device Management
++ **Enable Developer Mode**, go to Settings > Privacy & Security on the iOS device. Scroll down to the Developer Mode list item and navigate into it. To toggle Developer mode, use the “Developer Mode” switch.
++ **Trust Developer**, in Settings > VPN & Device Management
 
 ### Method 2 - Third App Store(Experimental)
 
@@ -35,7 +35,7 @@ With your Iphone, from **Releases**, follow **download-shy** link, insert passwo
 
 #### Why do I get “App cannot be installed because its integrity could not be verified” or “Unable to install”?
 
-This error shows up when you try to install more than 3 apps with a free Apple Developer account. Paid Apple Developer Accounts ($99/year) can have as many apps as they want and they last for one year, but the free developer accounts are now all limited to 3 apps per device for 7 days.
+This error shows up when you try to install more than 3 apps with a **free Apple Developer account**. Paid Apple Developer Accounts **($99/year)** can have as many apps as they want and they last for one year, but the free developer accounts are now all limited to 3 apps per device for 7 days.
 
 If you are getting “App cannot be installed because its integrity could not be verified” it’s very likely because you already have 3 apps installed. Do keep in mind that AltStore counts towards this limit.
 
@@ -55,7 +55,7 @@ If you are getting “App cannot be installed because its integrity could not be
 
 For installing IPA files follow **Method 1 - Sideloading(Clean)**
 
-## Common Issues
+## Common Issues and False Positive
 
 Developer Mode could be mistaken for a jaibreak. For the purpose of our goal this is not a problem because we will always try to bypass all checks. In any case it is an issue to investigate because it is a false positive.
 
@@ -72,6 +72,6 @@ If you are curious, I added this code snippet to help you identify your false po
         }
 ```
 
-## Library Used for shy Project
+## Library used for shy Project
 
 [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)
