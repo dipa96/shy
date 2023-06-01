@@ -20,7 +20,7 @@ At the moment shy supported only iOS 16.
 
 ## Installation
 
-### Method 1
+### Method 1 (Clean)
 
 From **Releases**, download shy ipa file. Sideloading it with tool like [Sideloadly](https://sideloadly.io/), [CydiaImpactor](http://www.cydiaimpactor.com/) and more.
 
@@ -29,7 +29,7 @@ After installing App can generate errors. For fix:
 + Enable Developer Mode go to Settings > Privacy & Security on the iOS device. Scroll down to the Developer Mode list item and navigate into it. To toggle Developer mode, use the “Developer Mode” switch.
 + Trust Developer in Settings > VPN & Device Management
 
-### Method 2
+### Method 2 (Experimental)
 
 With your Iphone, from **Releases**, follow **download-shy** link, insert password and download app.
 
