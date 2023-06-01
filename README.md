@@ -4,17 +4,13 @@ shy is a demo iOS application protected using IOSSecuritySuite library. The app 
 
 ## Core
 
-Homepage consists of a clickable card which showing the number of defense to be bypassed.
++ **Homepage** consists of a clickable card which showing the number of defense to be bypassed.
 
-![home](assets/home.png)
-
-Check Device Status consists of a clickable button that shows the current security status of the phone. The goal is to bring all Boolean fields to FALSE by exploiting several bypass methods.
-
-![check](assets/check.png)
++ **Check Device Status** consists of a clickable button that shows the current security status of the phone. The goal is to bring all Boolean fields to FALSE by exploiting several bypass methods.
 
 ## Demo
 
-Add GIF.
+![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmYzY2M4NmYwYjQyNDA2YTBjMTMxMzAwMTkzY2I3MmNmOTYwOGY3MSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/sVh7YKFzx59tOJI0BV/giphy.gif)
 
 ## Minimum requirements
 
