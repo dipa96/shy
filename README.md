@@ -61,7 +61,7 @@ Developer Mode could be mistaken for a jaibreak. For the purpose of our goal thi
 
 *In my case, undecimus:// URL scheme detected and Jailbreak flag set to TRUE.*
 
-If you are curious, you can look up your error by adding this check in the code:
+If you are curious, I added this code snippet to help you identify your false positive for Jailbrek. Once you run the checks you can look in the Xcode console at your specific error.
 
 ```swift
         let jailbreakStatus = IOSSecuritySuite.amIJailbrokenWithFailMessage()
