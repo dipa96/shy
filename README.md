@@ -2,6 +2,8 @@
 
 shy is a demo iOS application protected using IOSSecuritySuite library. The app was created to test new bypass methods for jailbreaking, tampering, debugging, emulation and more.
 
+I initially wanted to create [Scrumdinger](https://developer.apple.com/tutorials/app-dev-training/getting-started-with-scrumdinger) from Apple's official documentation. Dropped it in half and started implementing security protection measures. However I highly recommend taking the course(In the end I did it).
+
 ## Core
 
 + **Homepage** consists of a clickable card which showing the number of defense to be bypassed.
