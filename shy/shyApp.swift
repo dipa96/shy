@@ -12,7 +12,7 @@ struct shyApp: App {
     var body: some Scene {
         WindowGroup {
             // Set initial view
-            ScrumsView(scrums: DailyScrum.sampleData)
+            DetailCheck()
         }
     }
 }

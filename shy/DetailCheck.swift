@@ -10,7 +10,7 @@ import IOSSecuritySuite
 
 struct DetailCheck: View {
     @State private var CurrentStatus = ""
-    let scrum: DailyScrum
+    // let scrum: DailyScrum
     // let defenseCheck: Steroids
     
     var body: some View {
@@ -18,7 +18,7 @@ struct DetailCheck: View {
             Button(action: {
                 checkStatus()
             }) {
-                Text("Check Device Security Status").font(.largeTitle)
+                Text("Application Security Status").font(.largeTitle)
             }
             Text(CurrentStatus)
                 .padding().font(.headline)
@@ -81,7 +81,8 @@ struct DetailCheck: View {
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         //DetailView(scrum: DailyScrum.sampleData[0], DefenseCheck: DefenseCheckHandler())
-        DetailCheck(scrum: DailyScrum.sampleData[0])
+        //DetailCheck(scrum: DailyScrum.sampleData[0])
+        DetailCheck()
     }
 }
 
