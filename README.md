@@ -24,7 +24,7 @@ I initially wanted to create [Scrumdinger](https://developer.apple.com/tutorials
 
 ## Minimum requirements
 
-At the moment shy supported only iOS 14 and below.
+At the moment shy supported only iOS 14 and later. Check branch or Releases for finding your version.
 
 ## Installation
 
