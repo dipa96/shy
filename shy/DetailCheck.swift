@@ -18,7 +18,7 @@ struct DetailCheck: View {
             Button(action: {
                 checkStatus()
             }) {
-                Text("Check Device Security Status").font(.largeTitle)
+                Text("Application Security Status").font(.largeTitle)
             }
             Text(CurrentStatus)
                 .padding().font(.headline)
