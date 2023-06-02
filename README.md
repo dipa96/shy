@@ -1,4 +1,10 @@
-# shy
+<h1 align="center">
+</br>
+  <a href="https://github.com/dipa96/shy"><img src="assets/shy.png" width="200" height="200" alt="shy"></a>
+<br>
+  shy
+<br>
+</h1>
 
 shy is a demo iOS application protected using [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite) library. The app was created to test new bypass methods for jailbreaking, tampering, debugging, emulation and more.
 
@@ -20,11 +26,11 @@ I initially wanted to create [Scrumdinger](https://developer.apple.com/tutorials
 
 ## Demo
 
-![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmYzY2M4NmYwYjQyNDA2YTBjMTMxMzAwMTkzY2I3MmNmOTYwOGY3MSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/sVh7YKFzx59tOJI0BV/giphy.gif)
+![GIF](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDA4ODcyZTQwYmJjMWYzNjRhNDE5OTQxMTNhZmExNTY1ZmNhODU2NSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/0SY29dVlFGSm3jB7sR/giphy.gif)
 
 ## Minimum requirements
 
-At the moment shy supported only iOS 16.
+At the moment shy supported only iOS 14 and later. Check branch or Releases for finding your version.
 
 ## Installation
 
