@@ -1,4 +1,7 @@
-# shy
+<h1 align="center">
+  <a href="assets/shy-logo.png" alt="Arjun"></a>
+  shy
+</h1>
 
 shy is a demo iOS application protected using [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite) library. The app was created to test new bypass methods for jailbreaking, tampering, debugging, emulation and more.
 
