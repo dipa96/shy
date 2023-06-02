@@ -1,6 +1,6 @@
 <h1 align="center">
 </br>
-  <a href="https://github.com/dipa96/shy"><img src="assets/shy-logo.png" width="200" height="200" alt="shy"></a>
+  <a href="https://github.com/dipa96/shy"><img src="assets/shy.png" width="200" height="200" alt="shy"></a>
 <br>
   shy
 <br>
