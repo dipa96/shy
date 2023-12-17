@@ -41,7 +41,7 @@ From **Releases**, download shy ipa file. Sideloading it with tool like [Sideloa
 After installation, the app may generate errors such as file *integrity problems* or *untrusted developers*. You can follow the next steps to eliminate the errors and use the app.
 
 + **Enable Developer Mode**, go to Settings > Privacy & Security on the iOS device. Scroll down to the Developer Mode list item and navigate into it. To toggle Developer mode, use the “Developer Mode” switch.
-+ **Trust Developer**, in Settings > VPN & Device Management
++ **Trust Developer**, in Settings > General > VPN & Device Management
 
 ### Method 2 - Third App Store(Experimental)
 
