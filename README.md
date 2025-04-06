@@ -89,7 +89,7 @@ If you are curious, I added this code snippet to help you identify your false po
 
 From 2025/04/06 you can see specific error in a Toast view.
 
-![GIF](assets/toast.png)
+<img src="assets/toast.png" width="200" height="400">
 
 ## Library used for shy Project
 
