@@ -1,34 +1,46 @@
-//
-//  DetailCheck.swift
-//  shy
-//
-//  Created by Donato Di Pasquale on 31/05/23.
-//
-
 import SwiftUI
 import IOSSecuritySuite
 
 struct DetailCheck: View {
-    @State private var CurrentStatus = ""
+    @State private var currentStatus = ""
+    @State private var showToast = false
+    @State private var toastMessage = ""
     let scrum: DailyScrum
-    // let defenseCheck: Steroids
     
     var body: some View {
-        VStack {
-            Button(action: {
-                checkStatus()
-            }) {
-                Text("App Security Status").font(.largeTitle).padding()
+        ZStack {
+            VStack {
+                Button(action: {
+                    checkStatus()
+                }) {
+                    Text("App Security Status")
+                        .font(.largeTitle)
+                        .padding()
+                }
+                Text(currentStatus)
+                    .padding()
+                    .font(.headline)
+                Spacer()
             }
-            Text(CurrentStatus)
-                .padding().font(.headline)
-            Spacer()
-
+            
+            // Overlay per il toast
+            if showToast {
+                VStack {
+                    Spacer()
+                    Text(toastMessage)
+                        .padding()
+                        .background(Color.black.opacity(0.8))
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                        .padding(.bottom, 50)
+                        .transition(.opacity)
+                }
+            }
         }
+        .animation(.easeInOut, value: showToast)
     }
     
     func checkStatus() {
-        
         /*
          github.com/securing/IOSSecuritySuite/blob/master/IOSSecuritySuite/JailbreakChecker.swift
          Performs:
@@ -39,49 +51,57 @@ struct DetailCheck: View {
         */
         
         if IOSSecuritySuite.amIJailbroken() {
-            CurrentStatus += "Jailbreak: TRUE\n"
+            currentStatus += "Jailbreak: TRUE\n"
         } else {
-            CurrentStatus += "Jailbreak: FALSE\n"
+            currentStatus += "Jailbreak: FALSE\n"
         }
         
         let jailbreakStatus = IOSSecuritySuite.amIJailbrokenWithFailMessage()
         if jailbreakStatus.jailbroken {
             print("This device is jailbroken")
-            print("Because: \(jailbreakStatus.failMessage)")
+            let message = "Because: \(jailbreakStatus.failMessage)"
+            print(message)
+            
+            // Visualizza il toast per 5 secondi
+            toastMessage = message
+            showToast = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+                withAnimation {
+                    showToast = false
+                }
+            }
         } else {
             print("This device is not jailbroken")
         }
         
         if IOSSecuritySuite.amIRunInEmulator() {
-            CurrentStatus += "Emulator: TRUE\n"
+            currentStatus += "Emulator: TRUE\n"
         } else {
-            CurrentStatus += "Emulator: FALSE\n"
+            currentStatus += "Emulator: FALSE\n"
         }
         
         if IOSSecuritySuite.amIProxied() {
-            CurrentStatus += "Proxy attached: TRUE\n"
+            currentStatus += "Proxy attached: TRUE\n"
         } else {
-            CurrentStatus += "Proxy attached: FALSE\n"
+            currentStatus += "Proxy attached: FALSE\n"
         }
         
         if IOSSecuritySuite.amIReverseEngineered() {
-            CurrentStatus += "Reverse Engineering: TRUE\n"
+            currentStatus += "Reverse Engineering: TRUE\n"
         } else {
-            CurrentStatus += "Reverse Engineering: FALSE\n"
+            currentStatus += "Reverse Engineering: FALSE\n"
         }
         
         if IOSSecuritySuite.amIDebugged() {
-            CurrentStatus += "Debugger: TRUE\n"
+            currentStatus += "Debugger: TRUE\n"
         } else {
-            CurrentStatus += "Debugger: FALSE\n"
+            currentStatus += "Debugger: FALSE\n"
         }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        //DetailView(scrum: DailyScrum.sampleData[0], DefenseCheck: DefenseCheckHandler())
         DetailCheck(scrum: DailyScrum.sampleData[0])
     }
 }
-

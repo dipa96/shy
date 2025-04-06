@@ -1,4 +1,5 @@
 {
+  "originHash" : "6704767d9d900eb6ce9769cfbbe6944eba478360f92dcf317ae60a9174945c01",
   "pins" : [
     {
       "identity" : "iossecuritysuite",
@@ -8,7 +9,16 @@
         "branch" : "master",
         "revision" : "1708ab502d8985ce1a1957128473fe866d9e965e"
       }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scalessec/Toast-Swift",
+      "state" : {
+        "revision" : "ddccd20d6fb718448d9b179c454c561653fda7d5",
+        "version" : "5.1.1"
+      }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

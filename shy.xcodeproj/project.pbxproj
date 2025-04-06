@@ -15,6 +15,7 @@
 		3E3B00EA2A27EDF200C32F63 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B00E92A27EDF200C32F63 /* ScrumsView.swift */; };
 		3E3B00EE2A27EE2900C32F63 /* DetailCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3B00ED2A27EE2900C32F63 /* DetailCheck.swift */; };
 		3E3B00F12A27EE5200C32F63 /* IOSSecuritySuite in Frameworks */ = {isa = PBXBuildFile; productRef = 3E3B00F02A27EE5200C32F63 /* IOSSecuritySuite */; };
+		3ECC7DF42DA3022C00879977 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 3ECC7DF32DA3022C00879977 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ECC7DF42DA3022C00879977 /* Toast in Frameworks */,
 				3E3B00F12A27EE5200C32F63 /* IOSSecuritySuite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +116,7 @@
 			name = shy;
 			packageProductDependencies = (
 				3E3B00F02A27EE5200C32F63 /* IOSSecuritySuite */,
+				3ECC7DF32DA3022C00879977 /* Toast */,
 			);
 			productName = shy;
 			productReference = 3E3B00D22A27E97700C32F63 /* shy.app */;
@@ -145,6 +148,7 @@
 			mainGroup = 3E3B00C92A27E97700C32F63;
 			packageReferences = (
 				3E3B00EF2A27EE5200C32F63 /* XCRemoteSwiftPackageReference "IOSSecuritySuite" */,
+				3ECC7DF22DA3022C00879977 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
 			);
 			productRefGroup = 3E3B00D32A27E97700C32F63 /* Products */;
 			projectDirPath = "";
@@ -395,6 +399,14 @@
 				kind = branch;
 			};
 		};
+		3ECC7DF22DA3022C00879977 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -402,6 +414,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3E3B00EF2A27EE5200C32F63 /* XCRemoteSwiftPackageReference "IOSSecuritySuite" */;
 			productName = IOSSecuritySuite;
+		};
+		3ECC7DF32DA3022C00879977 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ECC7DF22DA3022C00879977 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
