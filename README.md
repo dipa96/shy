@@ -11,6 +11,7 @@ shy is a demo iOS application protected using [IOSSecuritySuite](https://github.
 I initially wanted to create [Scrumdinger](https://developer.apple.com/tutorials/app-dev-training/getting-started-with-scrumdinger) from Apple's official documentation. Dropped it in half and started implementing security protection measures. However I highly recommend taking the course(In the end I did it).
 
 # Table of Contents
+
 1. [Core](#core)
 2. [Demo](#demo)
 3. [Minimum requirements](#minimum-requirements)
@@ -86,6 +87,11 @@ If you are curious, I added this code snippet to help you identify your false po
         }
 ```
 
+From 2025/04/06 you can see specific error in a Toast view.
+
+![GIF](assets/toast.png)
+
 ## Library used for shy Project
 
-[IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)
+- [IOSSecuritySuite](https://github.com/securing/IOSSecuritySuite)  
+- [Toast-Swift](https://github.com/scalessec/Toast-Swift)
